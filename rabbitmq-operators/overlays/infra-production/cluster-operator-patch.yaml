@@ -11,3 +11,7 @@ spec:
           value: "infra-production-on-demand"
           operator: "Equal"
           effect: "NoSchedule"
+      containers:
+        - name: operator
+          args:
+            - --zap-log-level=error
