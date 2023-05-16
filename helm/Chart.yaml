@@ -1,0 +1,8 @@
+apiVersion: v2
+name: nginx-helm
+version: 0.0.1
+
+dependencies:
+  - name: nginx
+    version: 14.2.1
+    repository: https://charts.bitnami.com/bitnami

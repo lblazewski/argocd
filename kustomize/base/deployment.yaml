@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-kustomize
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: nginx-kustomize
+          image: nginx
+          ports:
+            - containerPort: 80
